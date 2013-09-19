@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Minliner 0.0.5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/themes/base/jquery-ui.css'>
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <script src='http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
+  <script src='http://rawgithub.com/wycats/handlebars.js/1.0.0/dist/handlebars.js'></script>
+  <script src='js/caret.js'></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+  <h1>minliner <a data-toggle="modal" href="#myModal" class="btn btn-xs btn-default">help</a></h1>
+  <div class="row">
+    <div class="col-md-6">
+      <pre class="ce" contenteditable></pre>
+    </div>
+    <div class="col-md-6">
+    <ul class="nav nav-tabs" id="myTab">
+      <li class="active"><a href="#output">Preview</a></li>
+      <li><a href="#source">Source</a></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane active" id="output">
+        <div id="output" class="col-md-12">
+        </div>
+      </div>
+      <div class="tab-pane" id="source">
+        <textarea name="source" id="source-text" class="col-md-12"></textarea>
+      </div>
+    </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title">使い方</h4>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>クリックしてキーボードで入力します。</li>
+            <li>上下カーソルキーで移動。</li>
+            <li>改行で行を増やします。</li>
+            <li>Tabキーで階層下げ。</li>
+            <li>Tab+Shiftキーで階層上げ。</li>
+          </ul>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  </div>
+
+</div>
+
+
+</body>
+
+</html>
